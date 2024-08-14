@@ -223,6 +223,7 @@ h6 {
   padding: .8125rem .9375rem
 }
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
   gap: .9375rem;
@@ -502,7 +503,11 @@ h6 {
   }
   .icon-menu {
     display: block;
-    position: relative;
+    position: absolute;
+    left: .9375rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 2.125rem;
     height: 1.5rem;
     z-index: 5
@@ -510,7 +515,9 @@ h6 {
   .menu-open .icon-menu {
     position: fixed;
     top: 1.25rem;
-    left: 1.25rem
+    left: 1.25rem;
+    -webkit-transform: none;
+    transform: none
   }
   .icon-menu span,
   .icon-menu::after,
@@ -548,7 +555,8 @@ h6 {
   }
   .header__container {
     padding-top: .625rem;
-    padding-bottom: .625rem
+    padding-bottom: .625rem;
+    padding-left: 4rem
   }
   .header__logo img {
     max-width: 6.6875rem
@@ -562,6 +570,9 @@ h6 {
   }
   .submenu__title {
     font-size: 1.5rem
+  }
+  .submenu__title:not(:last-child) {
+    margin-bottom: .9375rem
   }
   .submenu__item {
     font-size: 1.25rem
