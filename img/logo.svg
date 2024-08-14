@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="173.33333"
+   height="82.666664"
+   viewBox="0 0 173.33333 82.666664"
+   sodipodi:docname="Ditto_logo.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16">
+      <path
+         d="M 0,62 H 130 V 0 H 0 Z"
+         id="path14" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="Ditto_logo"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,82.666667)">
+    <g
+       id="g10">
+      <g
+         id="g12"
+         clip-path="url(#clipPath16)">
+        <g
+           id="g18"
+           transform="translate(103.0575,16.2036)">
+          <path
+             d="m 0,0 c 5.244,0 9.145,4.11 9.167,9.201 -0.022,5.091 -3.923,9.2 -9.167,9.201 -5.245,0 -9.145,-4.11 -9.168,-9.201 C -9.145,4.11 -5.245,0 0,0 M 13.15,21.934 C 16.373,19.011 18.623,14.519 18.635,9.201 18.623,3.883 16.373,-0.609 13.15,-3.533 10.37,-6.087 6.162,-8.116 0,-8.116 c -6.162,0 -10.37,2.029 -13.151,4.583 -3.222,2.924 -5.472,7.415 -5.485,12.734 0.007,3.16 0.805,6.028 2.127,8.449 h -3.977 V -6.584 h -9.166 V 17.65 h -3.775 l -10e-4,-24.234 h -9.166 l -0.002,24.234 h -3.773 l -0.002,-24.234 h -9.166 l -10e-4,32.049 h 12.942 v 11.122 h 9.169 V 25.465 h 3.775 v 11.122 h 9.166 V 25.465 h 6.313 v -4.55 c 0.328,0.358 0.669,0.698 1.022,1.019 2.781,2.554 6.989,4.584 13.151,4.584 6.162,0 10.37,-2.03 13.15,-4.584 M -76.264,0 c -5.261,0 -9.018,4.015 -9.018,9.201 0,5.186 3.757,9.201 9.018,9.201 5.26,-0.001 9.018,-4.015 9.018,-9.201 C -67.246,4.015 -71.004,0 -76.264,0 m 8.116,21.258 c -3.08,4.809 -7.965,5.26 -10.445,5.26 -9.619,0 -16.157,-7.698 -16.157,-17.317 0,-9.619 6.538,-17.317 16.157,-17.317 2.48,0 7.365,0.45 10.445,5.26 v -3.728 h 9.168 v 43.171 h -9.168 z m 17.195,7.37 c 2.531,0 4.583,2.052 4.583,4.585 l 10e-4,4.496 c -1.376,-0.704 -2.933,-1.1 -4.584,-1.1 -1.651,0 -3.209,0.396 -4.585,1.1 v -4.496 c 0,-2.533 2.053,-4.585 4.585,-4.585"
+             style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+             id="path20" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
