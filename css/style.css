@@ -8,6 +8,7 @@
 }
 .form-order__item-title::after,
 .select__title::after,
+.tabs-account__title::after,
 .to-cart__bonus::after,
 [class*=_icon-]:before {
   font-family: icons;
@@ -22,6 +23,9 @@
 [class*=_icon-]:before {
   display: block;
   flex-shrink: 0
+}
+._icon-edit:before {
+  content: ""
 }
 ._icon-user-fill:before {
   content: ""
@@ -579,6 +583,7 @@ details summary {
 }
 .footer__link,
 .form-order__link,
+.orders-account__title-link,
 .product-cart__title-link,
 .product-form__title-link,
 .product-item__link,
@@ -1625,6 +1630,208 @@ details summary {
   flex-shrink: 0;
   font-size: 1.125rem
 }
+.tabs-account__main-title {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: .0625rem #787878 solid
+}
+.tabs-account__aside {
+  flex: 0 0 37.996096%
+}
+.tabs-account__navigation:not(:last-child) {
+  margin-bottom: 3.75rem
+}
+.tabs-account__title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1.875rem;
+  color: #787878;
+  font-weight: 700;
+  padding-right: .3125rem;
+  text-transform: uppercase;
+  transition: all .3s,border-color .5s;
+  border-bottom: .0625rem transparent solid
+}
+.tabs-account__title:not(._tab-active) {
+  border-color: #787878
+}
+.tabs-account__title::after {
+  content: "";
+  display: block;
+  font-size: 1.25rem;
+  color: #000;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  transition: all .3s
+}
+.tabs-account__title._tab-active {
+  color: #000
+}
+.tabs-account__title._tab-active::after {
+  color: #000;
+  -webkit-transform: rotate(0);
+  transform: rotate(0)
+}
+.tabs-account__title span {
+  flex-grow: 1;
+  text-align: left
+}
+.tabs-account__logout {
+  width: 100%;
+  font-weight: 400
+}
+.tabs-account__content {
+  flex-grow: 1
+}
+.account-info__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -.75rem;
+  margin-right: -.75rem
+}
+.account-info__block {
+  padding-left: .75rem;
+  padding-right: .75rem
+}
+.account-info__field input {
+  font-size: 1.5rem
+}
+.account-info__edit {
+  color: #787878;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  transition: color .3s
+}
+.tab-title {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase
+}
+.tab-title--margin:not(:last-child) {
+  margin-bottom: 2.875rem
+}
+.orders-account__item {
+  display: flex
+}
+.orders-account__item:not(:last-child) {
+  margin-bottom: 2rem
+}
+.orders-account__image-link {
+  flex-shrink: 0;
+  overflow: hidden
+}
+.orders-account__image-link img {
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+.orders-account__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem
+}
+.orders-account__item-title {
+  color: #000;
+  font-size: 1.5rem
+}
+.orders-account__item-title._disabled {
+  color: #787878
+}
+.orders-account__price {
+  color: #787878
+}
+.orders-account__info {
+  align-self: self-end
+}
+.orders-account__label {
+  color: #000
+}
+.orders-account__label._disabled {
+  color: #787878
+}
+.bonus-account__title {
+  color: #787878;
+  font-weight: 700
+}
+.bonus-account__label {
+  color: #000;
+  font-weight: 700
+}
+.faq-account__item {
+  max-width: 26.875rem
+}
+.faq-account__item:not(:last-child) {
+  margin-bottom: 1.0625rem
+}
+.faq-account__header {
+  display: flex;
+  gap: .9375rem;
+  padding-left: 3.125rem;
+  padding-right: .3125rem
+}
+.faq-account__header:not(:last-child) {
+  margin-bottom: .3125rem
+}
+.faq-account__name {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.125rem;
+  flex-grow: 1
+}
+.faq-account__date {
+  color: #787878;
+  font-size: .875rem
+}
+.faq-account__body {
+  color: #000;
+  font-size: 1rem;
+  padding: .8125rem 1.0625rem 1.0625rem;
+  position: relative;
+  border: .0625rem solid #c9c9c9;
+  line-height: 1.2
+}
+.faq-account__decor {
+  position: absolute;
+  top: .0625rem;
+  left: -.0625rem;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff
+}
+.faq-account__decor::after,
+.faq-account__decor::before {
+  content: "";
+  position: absolute;
+  background-color: #c9c9c9
+}
+.faq-account__decor::before {
+  -webkit-transform: rotate(42deg);
+  transform: rotate(42deg);
+  bottom: 51%;
+  right: -19%;
+  width: 134%;
+  height: .0625rem
+}
+.faq-account__decor::after {
+  height: 100%;
+  width: .0625rem;
+  left: 0;
+  bottom: 0
+}
+.faq-account__decor--bottom {
+  -webkit-transform: rotate(180deg) translateY(-100%);
+  transform: rotate(180deg) translateY(-100%);
+  top: auto;
+  left: auto;
+  right: -.0625rem;
+  bottom: .0625rem
+}
 .splide__container {
   box-sizing: border-box;
   position: relative
@@ -1954,6 +2161,13 @@ details summary {
   .spoilers-product__item::before {
     max-width: 23.875rem
   }
+  .account-info__block {
+    flex: 0 0 50%
+  }
+  .orders-account__label--date {
+    flex-grow: 1;
+    text-align: center
+  }
 }
 @media (min-width:61.99875em) {
   .menu__item {
@@ -2035,6 +2249,24 @@ details summary {
   .order__summary {
     padding-left: 2.5rem;
     margin-left: auto
+  }
+}
+@media (min-width:62.49875em) {
+  .page__account {
+    padding-top: 3.125rem
+  }
+  .tabs-account {
+    display: flex;
+    align-items: start
+  }
+  .tabs-account__aside {
+    padding-top: .9375rem
+  }
+  .tabs-account__title {
+    border-bottom: .0625rem #787878 solid
+  }
+  .tabs-account__body {
+    padding-top: .9375rem
   }
 }
 @media (min-width:97.9375em) {
@@ -2163,6 +2395,69 @@ details summary {
   }
   .summary-order__product:not(:last-child) {
     margin-bottom: 2rem
+  }
+  .tabs-account__main-title {
+    font-size: 2rem
+  }
+  .tabs-account__main-title {
+    padding-bottom: 2.875rem
+  }
+  .tabs-account__title {
+    font-size: 1.5rem
+  }
+  .tabs-account__title {
+    padding-top: 2.1875rem
+  }
+  .tabs-account__title {
+    padding-bottom: 2.1875rem
+  }
+  .tabs-account__logout {
+    padding-top: 1.6875rem
+  }
+  .tabs-account__logout {
+    padding-bottom: 1.6875rem
+  }
+  .tabs-account__logout {
+    font-size: 2rem
+  }
+  .tabs-account__content {
+    padding-left: 10rem
+  }
+  .account-info__body {
+    row-gap: 2.3125rem
+  }
+  .account-info__edit {
+    font-size: 1.5rem
+  }
+  .account-info__edit::before {
+    font-size: 2.0625rem
+  }
+  .orders-account__item {
+    gap: 1.875rem
+  }
+  .orders-account__image-link {
+    width: 8.125rem
+  }
+  .orders-account__image-link {
+    height: 8.125rem
+  }
+  .orders-account__price {
+    font-size: 1.75rem
+  }
+  .orders-account__label--date {
+    font-size: 1.5rem
+  }
+  .orders-account__label--status {
+    font-size: 1.5rem
+  }
+  .bonus-account__title {
+    font-size: 1.5rem
+  }
+  .bonus-account__title:not(:last-child) {
+    margin-bottom: .875rem
+  }
+  .bonus-account__label {
+    font-size: 1.5rem
   }
 }
 @media (min-width:25em) {
@@ -2303,6 +2598,92 @@ details summary {
   }
   .summary-order__product:not(:last-child) {
     margin-bottom: 1rem
+  }
+  .tabs-account__main-title {
+    font-size: 1.125rem
+  }
+  .tabs-account__main-title {
+    padding-bottom: 1.0625rem
+  }
+  .tabs-account__title {
+    font-size: 1.125rem
+  }
+  .tabs-account__title {
+    padding-top: .9375rem
+  }
+  .tabs-account__title {
+    padding-bottom: .9375rem
+  }
+  .tabs-account__logout {
+    padding-top: .5rem
+  }
+  .tabs-account__logout {
+    padding-bottom: .5rem
+  }
+  .tabs-account__logout {
+    font-size: 1.125rem
+  }
+  .account-info__body {
+    row-gap: .625rem
+  }
+  .account-info__edit {
+    font-size: .875rem
+  }
+  .account-info__edit::before {
+    font-size: 1.5625rem
+  }
+  .orders-account__item {
+    gap: .625rem
+  }
+  .orders-account__image-link {
+    width: 3.625rem
+  }
+  .orders-account__image-link {
+    height: 3.625rem
+  }
+  .orders-account__price {
+    font-size: .75rem
+  }
+  .orders-account__label--date {
+    font-size: .75rem
+  }
+  .orders-account__label--status {
+    font-size: .875rem
+  }
+  .bonus-account__title {
+    font-size: .875rem
+  }
+  .bonus-account__title:not(:last-child) {
+    margin-bottom: .3125rem
+  }
+  .bonus-account__label {
+    font-size: .875rem
+  }
+}
+@media (max-width:62.5em) {
+  .tabs-account__main-title {
+    text-align: center
+  }
+  .tabs-account__title {
+    gap: 1.3125rem
+  }
+  .tabs-account__title::after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+  }
+  .tabs-account__title._tab-active::after {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg)
+  }
+  .tabs-account__content:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .tabs-account__body:not(:last-child) {
+    padding-bottom: 1.375rem;
+    border-bottom: .0625rem #787878 solid
+  }
+  .tab-title {
+    display: none
   }
 }
 @media (max-width:61.99875em) {
@@ -2607,6 +2988,37 @@ details summary {
     font-size: .75rem
   }
   .product-cart__price {
+    font-size: .875rem
+  }
+  .account-info__body {
+    justify-content: space-between
+  }
+  .account-info__block:not(.account-info__block--thin) {
+    flex: 100%
+  }
+  .account-info__field input {
+    font-size: .875rem
+  }
+  .account-info__edit {
+    gap: .125rem
+  }
+  .orders-account__body {
+    gap: .3125rem;
+    flex-grow: 1
+  }
+  .orders-account__item-title {
+    font-size: .875rem
+  }
+  .orders-account__label {
+    text-align: end
+  }
+  .orders-account__label:not(:last-child) {
+    margin-bottom: .3125rem
+  }
+  .faq-account__name {
+    font-size: .875rem
+  }
+  .faq-account__body {
     font-size: .875rem
   }
 }
@@ -3040,6 +3452,206 @@ details summary {
       margin-bottom: calc(1rem + 1*(100vw - 20rem)/ 77.9375)
     }
   }
+  @supports (font-size:clamp(1.125rem ,0.9004611067rem + 1.1226944667vw ,2rem)) {
+    .tabs-account__main-title {
+      font-size: clamp(1.125rem ,.9004611067rem + 1.1226944667vw ,2rem)
+    }
+  }
+  @supports not (font-size:clamp(1.125rem ,0.9004611067rem + 1.1226944667vw ,2rem)) {
+    .tabs-account__main-title {
+      font-size: calc(1.125rem + .875*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (padding-bottom:clamp(1.0625rem ,0.5973837209rem + 2.3255813953vw ,2.875rem)) {
+    .tabs-account__main-title {
+      padding-bottom: clamp(1.0625rem ,.5973837209rem + 2.3255813953vw ,2.875rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(1.0625rem ,0.5973837209rem + 2.3255813953vw ,2.875rem)) {
+    .tabs-account__main-title {
+      padding-bottom: calc(1.0625rem + 1.8125*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(1.125rem ,1.0287690457rem + 0.4811547715vw ,1.5rem)) {
+    .tabs-account__title {
+      font-size: clamp(1.125rem ,1.0287690457rem + .4811547715vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(1.125rem ,1.0287690457rem + 0.4811547715vw ,1.5rem)) {
+    .tabs-account__title {
+      font-size: calc(1.125rem + .375*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (padding-top:clamp(0.9375rem ,0.6167301524rem + 1.6038492382vw ,2.1875rem)) {
+    .tabs-account__title {
+      padding-top: clamp(.9375rem ,.6167301524rem + 1.6038492382vw ,2.1875rem)
+    }
+  }
+  @supports not (padding-top:clamp(0.9375rem ,0.6167301524rem + 1.6038492382vw ,2.1875rem)) {
+    .tabs-account__title {
+      padding-top: calc(.9375rem + 1.25*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (padding-bottom:clamp(0.9375rem ,0.6167301524rem + 1.6038492382vw ,2.1875rem)) {
+    .tabs-account__title {
+      padding-bottom: clamp(.9375rem ,.6167301524rem + 1.6038492382vw ,2.1875rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(0.9375rem ,0.6167301524rem + 1.6038492382vw ,2.1875rem)) {
+    .tabs-account__title {
+      padding-bottom: calc(.9375rem + 1.25*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (padding-top:clamp(0.5rem ,0.1952686447rem + 1.5236567763vw ,1.6875rem)) {
+    .tabs-account__logout {
+      padding-top: clamp(.5rem ,.1952686447rem + 1.5236567763vw ,1.6875rem)
+    }
+  }
+  @supports not (padding-top:clamp(0.5rem ,0.1952686447rem + 1.5236567763vw ,1.6875rem)) {
+    .tabs-account__logout {
+      padding-top: calc(.5rem + 1.1875*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (padding-bottom:clamp(0.5rem ,0.1952686447rem + 1.5236567763vw ,1.6875rem)) {
+    .tabs-account__logout {
+      padding-bottom: clamp(.5rem ,.1952686447rem + 1.5236567763vw ,1.6875rem)
+    }
+  }
+  @supports not (padding-bottom:clamp(0.5rem ,0.1952686447rem + 1.5236567763vw ,1.6875rem)) {
+    .tabs-account__logout {
+      padding-bottom: calc(.5rem + 1.1875*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(1.125rem ,0.9004611067rem + 1.1226944667vw ,2rem)) {
+    .tabs-account__logout {
+      font-size: clamp(1.125rem ,.9004611067rem + 1.1226944667vw ,2rem)
+    }
+  }
+  @supports not (font-size:clamp(1.125rem ,0.9004611067rem + 1.1226944667vw ,2rem)) {
+    .tabs-account__logout {
+      font-size: calc(1.125rem + .875*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (row-gap:clamp(0.625rem ,0.1919607057rem + 2.1651964715vw ,2.3125rem)) {
+    .account-info__body {
+      row-gap: clamp(.625rem ,.1919607057rem + 2.1651964715vw ,2.3125rem)
+    }
+  }
+  @supports not (row-gap:clamp(0.625rem ,0.1919607057rem + 2.1651964715vw ,2.3125rem)) {
+    .account-info__body {
+      row-gap: calc(.625rem + 1.6875*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .account-info__edit {
+      font-size: clamp(.875rem ,.7146150762rem + .8019246191vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .account-info__edit {
+      font-size: calc(.875rem + .625*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(1.5625rem ,1.4341920609rem + 0.6415396953vw ,2.0625rem)) {
+    .account-info__edit::before {
+      font-size: clamp(1.5625rem ,1.4341920609rem + .6415396953vw ,2.0625rem)
+    }
+  }
+  @supports not (font-size:clamp(1.5625rem ,1.4341920609rem + 0.6415396953vw ,2.0625rem)) {
+    .account-info__edit::before {
+      font-size: calc(1.5625rem + .5*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (gap:clamp(0.625rem ,0.3042301524rem + 1.6038492382vw ,1.875rem)) {
+    .orders-account__item {
+      gap: clamp(.625rem ,.3042301524rem + 1.6038492382vw ,1.875rem)
+    }
+  }
+  @supports not (gap:clamp(0.625rem ,0.3042301524rem + 1.6038492382vw ,1.875rem)) {
+    .orders-account__item {
+      gap: calc(.625rem + 1.25*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (width:clamp(3.625rem ,2.4702285485rem + 5.7738572574vw ,8.125rem)) {
+    .orders-account__image-link {
+      width: clamp(3.625rem ,2.4702285485rem + 5.7738572574vw ,8.125rem)
+    }
+  }
+  @supports not (width:clamp(3.625rem ,2.4702285485rem + 5.7738572574vw ,8.125rem)) {
+    .orders-account__image-link {
+      width: calc(3.625rem + 4.5*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (height:clamp(3.625rem ,2.4702285485rem + 5.7738572574vw ,8.125rem)) {
+    .orders-account__image-link {
+      height: clamp(3.625rem ,2.4702285485rem + 5.7738572574vw ,8.125rem)
+    }
+  }
+  @supports not (height:clamp(3.625rem ,2.4702285485rem + 5.7738572574vw ,8.125rem)) {
+    .orders-account__image-link {
+      height: calc(3.625rem + 4.5*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(0.75rem ,0.4933841219rem + 1.2830793905vw ,1.75rem)) {
+    .orders-account__price {
+      font-size: clamp(.75rem ,.4933841219rem + 1.2830793905vw ,1.75rem)
+    }
+  }
+  @supports not (font-size:clamp(0.75rem ,0.4933841219rem + 1.2830793905vw ,1.75rem)) {
+    .orders-account__price {
+      font-size: calc(.75rem + 1*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(0.75rem ,0.5575380914rem + 0.9623095429vw ,1.5rem)) {
+    .orders-account__label--date {
+      font-size: clamp(.75rem ,.5575380914rem + .9623095429vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(0.75rem ,0.5575380914rem + 0.9623095429vw ,1.5rem)) {
+    .orders-account__label--date {
+      font-size: calc(.75rem + .75*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .orders-account__label--status {
+      font-size: clamp(.875rem ,.7146150762rem + .8019246191vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .orders-account__label--status {
+      font-size: calc(.875rem + .625*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .bonus-account__title {
+      font-size: clamp(.875rem ,.7146150762rem + .8019246191vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .bonus-account__title {
+      font-size: calc(.875rem + .625*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (margin-bottom:clamp(0.3125rem ,0.1681535686rem + 0.7217321572vw ,0.875rem)) {
+    .bonus-account__title:not(:last-child) {
+      margin-bottom: clamp(.3125rem ,.1681535686rem + .7217321572vw ,.875rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(0.3125rem ,0.1681535686rem + 0.7217321572vw ,0.875rem)) {
+    .bonus-account__title:not(:last-child) {
+      margin-bottom: calc(.3125rem + .5625*(100vw - 20rem)/ 77.9375)
+    }
+  }
+  @supports (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .bonus-account__label {
+      font-size: clamp(.875rem ,.7146150762rem + .8019246191vw ,1.5rem)
+    }
+  }
+  @supports not (font-size:clamp(0.875rem ,0.7146150762rem + 0.8019246191vw ,1.5rem)) {
+    .bonus-account__label {
+      font-size: calc(.875rem + .625*(100vw - 20rem)/ 77.9375)
+    }
+  }
 }
 @media (max-width:61.99875em)and (min-width:34.37375em) {
   .catalog__filter {
@@ -3080,6 +3692,18 @@ details summary {
     }
   }
 }
+@media (min-width:62.5em)and (max-width:97.9375em) {
+  @supports (padding-left:clamp(1.25rem ,-14.1820987654rem + 24.6913580247vw ,10rem)) {
+    .tabs-account__content {
+      padding-left: clamp(1.25rem ,-14.1820987654rem + 24.6913580247vw ,10rem)
+    }
+  }
+  @supports not (padding-left:clamp(1.25rem ,-14.1820987654rem + 24.6913580247vw ,10rem)) {
+    .tabs-account__content {
+      padding-left: calc(1.25rem + 8.75*(100vw - 62.5rem)/ 35.4375)
+    }
+  }
+}
 @media (any-hover:hover) {
   .select__title:hover {
     color: #000;
@@ -3093,6 +3717,7 @@ details summary {
   }
   .footer__link:hover,
   .form-order__link:hover,
+  .orders-account__title-link:hover,
   .product-cart__title-link:hover,
   .product-form__title-link:hover,
   .product-item__link:hover,
@@ -3175,6 +3800,16 @@ details summary {
     color: #000
   }
   .product-cart__image-link:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+  }
+  .tabs-account__title:hover {
+    color: #000
+  }
+  .account-info__edit:hover {
+    color: #000
+  }
+  .orders-account__image-link:hover img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05)
   }

@@ -2,7 +2,7 @@
 <html lang="uk">
 
 <head>
-	<title>Товар</title>
+	<title>Акаунт</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -162,206 +162,168 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__product product">
-				<div class="product__container">
-					<div class="product__slider">
-						<div class="splide product__main-slider">
-							<div class="splide__track">
-								<ul class="splide__list">
-									<li class="splide__slide"><img class="ibg" src="img/product/01.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/02.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/03.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/04.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/05.webp" alt="Image"></li>
-								</ul>
-							</div>
+			<section class="page__account account">
+				<div class="account__container">
+					<div data-tabs-animate data-tabs="1000" class="account__tabs tabs-account">
+						<div class="tabs-account__aside">
+							<h1 data-da=".tabs-account, 1000, first" class="tabs-account__main-title">особистий кабінет</h1>
+							<nav data-tabs-titles class="tabs-account__navigation">
+								<button type="button" class="tabs-account__title  _icon-cart-success"><span>МОЇ
+										ЗАМОВЛЕННЯ</span></button>
+								<button type="button" class="tabs-account__title  _icon-user-fill"><span>ПЕРСОНАЛЬНІ
+										ДАНІ</span></button>
+								<button type="button" class="tabs-account__title _icon-bonus"><span>МОЇ БОНУСИ</span></button>
+								<button type="button" class="tabs-account__title _tab-active _icon-message"><span>ПИТАННЯ ТА
+										ВІДПОВІДІ</span></button>
+							</nav>
+							<button data-da=".tabs-account, 1000, last" class="tabs-account__logout button-product"><span>Вийти</span></button>
 						</div>
+						<div data-tabs-body class="tabs-account__content">
+							<div class="tabs-account__body">
+								<div class="tabs-account__orders orders-account">
+									<h2 class="orders-account__title tab-title tab-title--margin">
+										Мої замовлення
+									</h2>
+									<div class="orders-account__items">
+										<div class="orders-account__item">
+											<a href="#" class="orders-account__image-link">
+												<img src="img/product/01.webp" alt="Image" class="ibg">
+											</a>
+											<div class="orders-account__body">
+												<h3 class="orders-account__item-title">
+													<a href="#" class="orders-account__title-link">ЛІТНІ ЧОЛОВІЧІ КРОСІВКИ ditto13186</a>
+												</h3>
+												<div class="orders-account__price">3460 грн</div>
+											</div>
+											<div class="orders-account__info">
 
-						<div class="splide product__thumbnail-slider">
-							<div class="splide__track">
-								<ul class="splide__list">
-									<li class="splide__slide"><img class="ibg" src="img/product/01.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/02.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/03.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/04.webp" alt="Image"></li>
-									<li class="splide__slide"><img class="ibg" src="img/product/05.webp" alt="Image"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="product__body">
-						<h1 data-da=".product__container, 767.98, first" class="product__title">
-							ЛІТНІ ЧОЛОВІЧІ КРОСІВКИ ditto 13186
-						</h1>
-						<div class="product__sizes sizes-product">
-							<div class="sizes-product__body">
-								<div class="sizes-product__label">Розмір</div>
-								<div class=" sizes">
-									<label class="sizes__item">
-										<input name="size" type="radio">
-										40
-									</label>
-									<label class="sizes__item">
-										<input name="size" type="radio">
-										41
-									</label>
-									<label class="sizes__item">
-										<input name="size" type="radio">
-										42
-									</label>
-									<label class="sizes__item">
-										<input name="size" type="radio">
-										43
-									</label>
-									<label class="sizes__item">
-										<input name="size" type="radio">
-										44
-									</label>
-									<label class="sizes__item">
-										<input name="size" type="radio">
-										45
-									</label>
-								</div>
-							</div>
-							<button type="button" class="sizes-product__button _icon-ruler">розмірна сітка</button>
-						</div>
-						<div class="product__to-cart to-cart">
-							<div class="to-cart__col">
-								<div class="to-cart__price">3460 грн</div>
-								<div class="to-cart__bonus">бонус <span>346 грн</span></div>
-							</div>
-							<div></div>
-							<button type="button" class="to-cart__button button-product"><span>додати в кошик</span></button>
-							<button class="to-cart__favorite _icon-heart"></button>
-						</div>
-						<dl class="product__specs">
-							<dt>
-								Тип застібки
-							</dt>
-							<dd>
-								шнурівка
-							</dd>
-							<dt>
-								Стиль
-							</dt>
-							<dd>
-								casual
-							</dd>
-							<dt>
-								Бренд
-							</dt>
-							<dd>
-								Berisstini
-							</dd>
-							<dt>
-								Стать
-							</dt>
-							<dd>
-								чоловіча
-							</dd>
-							<dt>
-								Сезон
-							</dt>
-							<dd>
-								літо
-							</dd>
-							<dt>
-								Колір
-							</dt>
-							<dd>
-								чорний
-							</dd>
-							<dt>
-								Матеріал верху
-							</dt>
-							<dd>
-								текстиль/Замша
-							</dd>
-							<dt>
-								Тип матеріалу
-							</dt>
-							<dd>
-								натуральний
-							</dd>
-							<dt>
-								Матеріал підкладки
-							</dt>
-							<dd>
-								шкіра
-							</dd>
-							<dt>
-								Матеріал устілки
-							</dt>
-							<dd>
-								шкіра
-							</dd>
-							<dt>
-								Матеріал підошви
-							</dt>
-							<dd>
-								поліуретан
-							</dd>
-							<dt>
-								Повномірні
-							</dt>
-							<dd>
-								так
-							</dd>
-						</dl>
-						<button class="product__credit button-product"><span>оплата частинами</span></button>
-						<div class="product__shipping shipping-product">
-							<h2 class="shipping-product__title">Доставка</h2>
-							<div class="shipping-product__item">
-								<div class="shipping-product__icon _icon-location"></div>
-								<div class="shipping-product__body">
-									<div class="shipping-product__label">
-										Самовивіз: <span>Харків</span>
-									</div>
-									<div class="shipping-product__label shipping-product__label--gray">
-										безкоштовно
+
+											</div>
+											<div data-da=".orders-account__info, 767.98, first" class="orders-account__label orders-account__label--date">12.06.2023</div>
+											<div data-da=".orders-account__info, 767.98, last" class="orders-account__label orders-account__label--status">ОПЛАЧЕНО</div>
+
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="shipping-product__item">
-								<div class="shipping-product__icon _icon-track"></div>
-								<div class="shipping-product__body">
-									<div class="shipping-product__label">
-										Доставка за адресою: <span>Харків</span>
-									</div>
-									<div class="shipping-product__label shipping-product__label--gray">
-										від 150грн
+							<div class="tabs-account__body">
+								<div class="tabs-account__info account-info">
+									<h2 class="account-info__title tab-title tab-title--margin">
+										ПЕРСОНАЛЬНІ ДАНІ
+									</h2>
+									<div class="account-info__body">
+										<div class="account-info__block">
+											<div class="account-info__field field field--text">
+												<input name="firstName" placeholder type="text">
+												<label class="field__label">Ім'я</label>
+											</div>
+										</div>
+										<div class="account-info__block">
+											<div class="account-info__field field field--text">
+												<input name="lastName" placeholder type="text">
+												<label class="field__label">Прізвище</label>
+											</div>
+										</div>
+										<div class="account-info__block">
+											<div class="account-info__field field field--text">
+												<input name="middleName" placeholder type="text">
+												<label class="field__label">По-батькові</label>
+											</div>
+										</div>
+										<div class="account-info__block">
+											<div class="account-info__field field field--text">
+												<input name="email" placeholder type="email">
+												<label class="field__label">Email</label>
+											</div>
+										</div>
+										<div class="account-info__block">
+											<div class="account-info__field field field--text">
+												<input data-phone name="phone" placeholder type="text">
+												<label class="field__label">Телефон</label>
+											</div>
+										</div>
+										<div class="account-info__block">
+											<div class="account-info__field field field--text">
+												<input name="birthDate" placeholder type="text">
+												<label class="field__label">Дата народження</label>
+											</div>
+										</div>
+										<div class="account-info__block account-info__block--thin">
+											<button class="account-info__edit _icon-edit">Редагувати профіль</button>
+										</div>
+										<div class="account-info__block account-info__block--thin">
+											<button class="account-info__edit _icon-edit">Змінити пароль</button>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="shipping-product__item">
-								<div class="shipping-product__icon _icon-np"></div>
-								<div class="shipping-product__body">
-									<div class="shipping-product__label">
-										Доставка у відділення
-									</div>
-									<div class="shipping-product__label shipping-product__label--gray">
-										від 120грн
+							<div class="tabs-account__body">
+								<div class="tabs-account__bonus bonus-account">
+									<div class="bonus-account__title">У ВАС НА РАХУНКУ:</div>
+									<div class="bonus-account__label">324 бонуси</div>
+								</div>
+							</div>
+							<div class="tabs-account__body">
+								<div class="tabs-account__faq faq-account">
+									<h2 class="faq-account__title tab-title tab-title--margin">ПИТАННЯ ТА ВІДПОВІДІ</h2>
+									<div class="faq-account__items">
+										<div class="faq-account__item">
+											<div class="faq-account__header">
+												<div class="faq-account__name">Ім’я клієнта</div>
+												<div class="faq-account__date">
+													11:30, 22.08.2024
+												</div>
+
+											</div>
+											<div class="faq-account__body">
+												Жебракують філософи при ґанку церкви
+												в Гадячі, ще й шатро їхнє п'яне знаємо?
+												<div class="faq-account__decor faq-account__decor--bottom"></div>
+											</div>
+										</div>
+										<div class="faq-account__item">
+											<div class="faq-account__header">
+												<div class="faq-account__name">ditto</div>
+												<div class="faq-account__date">
+													14:00, 22.08.2024
+												</div>
+
+											</div>
+											<div class="faq-account__body">
+												Протягом цієї п'ятирічки в ґрунт було висаджено гарбуз, шпинат та цілющий фенхель
+												<div class="faq-account__decor"></div>
+											</div>
+										</div>
+										<div class="faq-account__item">
+											<div class="faq-account__header">
+												<div class="faq-account__name">Ім’я клієнта</div>
+												<div class="faq-account__date">
+													11:30, 22.08.2024
+												</div>
+
+											</div>
+											<div class="faq-account__body">
+												Жебракують філософи при ґанку церкви
+												в Гадячі, ще й шатро їхнє п'яне знаємо?
+												<div class="faq-account__decor faq-account__decor--bottom"></div>
+											</div>
+										</div>
+										<div class="faq-account__item">
+											<div class="faq-account__header">
+												<div class="faq-account__name">ditto</div>
+												<div class="faq-account__date">
+													14:00, 22.08.2024
+												</div>
+
+											</div>
+											<div class="faq-account__body">
+												Протягом цієї п'ятирічки в ґрунт було висаджено гарбуз, шпинат та цілющий фенхель
+												<div class="faq-account__decor"></div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div data-spoilers class="product__spoilers spoilers-product">
-							<details class="spoilers-product__item">
-								<summary class="spoilers-product__title">Залишити відгук</summary>
-								<div class="spoilers-product__body">
-									<textarea placeholder="Ваш коментар" class="spoilers-product__textarea textarea"></textarea>
-								</div>
-							</details>
-							<details class="spoilers-product__item">
-								<summary class="spoilers-product__title">Відгуки покупців</summary>
-								<div class="spoilers-product__body">
-									<div class="spoilers-product__feedback feedback">
-										<div class="feedback__item"></div>
-										<div class="feedback__item"></div>
-										<div class="feedback__item"></div>
-									</div>
-								</div>
-							</details>
 						</div>
 					</div>
 				</div>
