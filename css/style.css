@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,900&display=swap);
 @font-face {
   font-family: icons;
   font-display: swap;
@@ -1661,7 +1661,6 @@ details summary {
   content: "";
   display: block;
   font-size: 1.25rem;
-  color: #000;
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   transition: all .3s
@@ -1736,10 +1735,13 @@ details summary {
 }
 .orders-account__item-title {
   color: #000;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  font-weight: 600
 }
-.orders-account__item-title._disabled {
-  color: #787878
+.orders-account__title-link._disabled {
+  color: #787878;
+  pointer-events: none;
+  text-decoration: none
 }
 .orders-account__price {
   color: #787878
@@ -1748,10 +1750,14 @@ details summary {
   align-self: self-end
 }
 .orders-account__label {
-  color: #000
+  color: #000;
+  font-weight: 600
 }
 .orders-account__label._disabled {
   color: #787878
+}
+.orders-account__label--status {
+  text-transform: uppercase
 }
 .bonus-account__title {
   color: #787878;
